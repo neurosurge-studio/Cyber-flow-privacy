@@ -1,1 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber Flow // Privacy Policy & Data Security Protocol (by Neuro-Surge)</title>
+  <style>
+    :root {
+      --bg-primary: #07090f;
+      --bg-card: #0d111c;
+      --bg-card-hover: #131929;
+      --text-main: #e2e8f0;
+      --text-muted: #94a3b8;
+      --color-cyan: #00f0ff;
+      --color-green: #00ff88;
+      --color-purple: #a855f7;
+      --color-amber: #f59e0b;
+      --border-color: #1e293b;
+      --border-highlight: rgba(0, 240, 255, 0.35);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-main);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.65;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 880px;
+      margin: 0 auto;
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 18px;
+      padding: 44px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+    }
+    .header {
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 24px;
+      margin-bottom: 30px;
+      position: relative;
+    }
+    .tag {
+      display: inline-block;
+      color: var(--color-cyan);
+      font-size: 0.82rem;
+      letter-spacing: 2px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      font-family: monospace;
+    }
+    h1 {
+      font-size: 1.9rem;
+      color: #fff;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    .meta-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 10px;
+      font-family: monospace;
+    }
+    .meta-item strong {
+      color: var(--color-cyan);
+    }
+    .lang-switcher {
+      display: inline-flex;
+      background: rgba(15, 23, 42, 0.8);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 4px;
+      margin-top: 16px;
+    }
+    .lang-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      padding: 6px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+    .lang-btn.active {
+      background: rgba(0, 240, 255, 0.15);
+      color: var(--color-cyan);
+      border: 1px solid rgba(0, 240, 255, 0.4);
+    }
+    .lang-btn:hover:not(.active) {
+      color: #fff;
+    }
+    .section-box {
+      background: var(--bg-card-hover);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 22px 0;
+      transition: border-color 0.2s;
+    }
+    .section-box:hover {
+      border-color: var(--border-highlight);
+    }
+    h2 {
+      font-size: 1.22rem;
+      color: var(--color-green);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    h3 {
+      font-size: 1.02rem;
+      color: #fff;
+      margin: 14px 0 8px 0;
+    }
+    p, ul {
+      color: var(--text-muted);
+      font-size: 0.94rem;
+      margin-bottom: 12px;
+    }
+    ul {
+      padding-left: 22px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    strong {
+      color: #f1f5f9;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(0, 240, 255, 0.1);
+      border: 1px solid rgba(0, 240, 255, 0.35);
+      color: var(--color-cyan);
+      padding: 2px 9px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-family: monospace;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    .badge-amber {
+      background: rgba(245, 158, 11, 0.1);
+      border-color: rgba(245, 158, 11, 0.35);
+      color: var(--color-amber);
+    }
+    .badge-purple {
+      background: rgba(168, 85, 247, 0.1);
+      border-color: rgba(168, 85, 247, 0.35);
+      color: var(--color-purple);
+    }
+    .sound-list {
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin: 12px 0 16px 0;
+    }
+    .sound-list li {
+      color: #cbd5e1;
+    }
+    .sound-list strong {
+      color: var(--color-cyan);
+    }
+    .table-container {
+      overflow-x: auto;
+      margin: 14px 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      text-align: left;
+    }
+    th, td {
+      border: 1px solid var(--border-color);
+      padding: 10px 14px;
+    }
+    th {
+      background: rgba(15, 23, 42, 0.9);
+      color: var(--color-cyan);
+      font-family: monospace;
+    }
+    td {
+      color: var(--text-muted);
+    }
+    a {
+      color: var(--color-cyan);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .footer {
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      font-family: monospace;
+    }
+    .lang-content {
+      display: none;
+    }
+    .lang-content.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <span class="tag">// CYBER FLOW · DATA SECURITY PROTOCOL</span>
+      <h1>Privacy Policy & Data Security Protocol</h1>
+      <div class="meta-bar">
+        <span class="meta-item">Application: <strong>Cyber Flow</strong></span>
+        <span class="meta-item">Developer: <strong>Neuro-Surge</strong></span>
+        <span class="meta-item">Version: <strong>v1.0.0</strong></span>
+        <span class="meta-item">Effective Date: <strong>April 2026</strong></span>
+      </div>
+    </div>
+
+    <div>
+      <p>
+        <strong>Cyber Flow</strong> (developed and published by <strong>Neuro-Surge</strong>) is a local-first, gamified deep focus and productivity operating system engineered specifically for knowledge workers, deep focus seekers, and high-performance flow seekers.
+      </p>
+      <p>
+        We strictly respect your fundamental right to privacy and adhere to the highest standards of data minimization and user sovereignty. This Privacy Policy outlines how Cyber Flow handles data across local storage, telemetry, crash reporting, user-configured Artificial Intelligence (AI) APIs, and third-party interactions in full compliance with the <strong>Microsoft Store Policy 10.5 (Personal Information & Privacy)</strong>, GDPR, and CCPA principles.
+      </p>
+
+      <!-- 1. Local Storage -->
+      <div class="section-box">
+        <h2>1. Local-First Data Storage & Sovereign Data Control <span class="badge">LOCAL-FIRST</span></h2>
+        <p>Cyber Flow is engineered around a strict <strong>offline-first architecture</strong>. All your operational data stays exclusively on your local device:</p>
+        <ul>
+          <li><strong>Productivity & Task Data</strong>: All task titles, micro-action breakdowns, Eisenhower Matrix categories, daily routines, habit streaks, inventory loot, character attributes, and battle logs are stored solely within your device's local storage engine (<code>IndexedDB</code> and <code>LocalStorage</code>).</li>
+          <li><strong>Zero Developer Central Storage</strong>: Neuro-Surge does not host or operate centralized user databases. Your private thoughts, task descriptions, notes, and productivity history are never uploaded, backed up, or mirrored to our servers.</li>
+          <li><strong>User Data Deletion & Export Rights (Right to Erasure)</strong>: You retain absolute ownership over your data. You may wipe all local records at any time via the in-app "Reset Data" option, or by uninstalling the application and clearing application storage. Because we hold zero copies on remote servers, local deletion permanently and unconditionally destroys all records.</li>
+        </ul>
+      </div>
+
+      <!-- 2. Telemetry & Analytics -->
+      <div class="section-box">
+        <h2>2. Telemetry & Analytics Policy <span class="badge">ZERO TRACKING</span></h2>
+        <ul>
+          <li><strong>No Tracking SDKs or Analytics Pixels</strong>: Cyber Flow contains zero third-party advertising SDKs, tracking pixels, behavioral telemetry agents, or device fingerprinting libraries (e.g., Google Analytics, Meta Pixel, Mixpanel, etc.).</li>
+          <li><strong>Zero Secret Background Telemetry</strong>: We do not log, harvest, or transmit your device ID, MAC address, hardware serial numbers, IP address, or user interaction sessions to any developer-owned remote logging server.</li>
+        </ul>
+      </div>
+
+      <!-- 3. Crash Reporting & Diagnostics -->
+      <div class="section-box">
+        <h2>3. Crash Reporting & Diagnostic Data <span class="badge badge-amber">STORE COMPLIANCE</span></h2>
+        <p>To ensure total transparency regarding diagnostic behavior, Cyber Flow differentiates between application-level and operating system-level error handling:</p>
+        <ul>
+          <li><strong>Application Level (Cyber Flow / Neuro-Surge)</strong>: The application does NOT autonomously collect or upload crash dumps, memory snapshots, or error logs to private remote servers. Local console logs remain in volatile memory and local debug logs on your machine for user inspection.</li>
+          <li><strong>Operating System & Microsoft Store Level (Windows Error Reporting - WER)</strong>: If you installed Cyber Flow via the Microsoft Store on Windows, the operating system may automatically collect anonymous, aggregated crash telemetry and diagnostics through the native <strong>Windows Error Reporting (WER)</strong> service, in accordance with your personal Windows settings (<em>Settings &gt; Privacy &amp; security &gt; Diagnostics &amp; feedback</em>).
+          This data collection is managed exclusively by Microsoft Corporation under the <a href="https://privacy.microsoft.com/en-us/privacystatement" target="_blank" rel="noopener noreferrer">Microsoft Privacy Statement</a>. Neuro-Surge only receives de-identified, high-level aggregate crash counts and stack trace signatures provided through Microsoft Partner Center to fix critical software bugs; we cannot view, extract, or correlate this data with your identity or task content.</li>
+        </ul>
+      </div>
+
+      <!-- 4. AI Architecture & Cloud Data Flow -->
+      <div class="section-box">
+        <h2>4. Artificial Intelligence (AI) Architecture & Cloud Data Flow <span class="badge badge-purple">DUAL-AI ENGINE</span></h2>
+        <p>Cyber Flow provides an intelligent AI Task Shredder to assist users with executive dysfunction in breaking overwhelming goals into executable micro-actions. We provide two distinct operational modes:</p>
+
+        <h3>A. Local SLM Engine (Offline &amp; Sovereign)</h3>
+        <ul>
+          <li><strong>100% On-Device Inference</strong>: Supports local Small Language Model (SLM) engines (powered by local GGUF C++ binaries, e.g., Qwen2.5-1.5B; downloaded on demand by the user in AI &amp; Model Settings), executing entirely on your device's local CPU hardware.</li>
+          <li><strong>Complete Air-Gapped Privacy</strong>: Zero task prompts or model outputs ever exit your local computer. No API keys, accounts, or internet connections are needed.</li>
+        </ul>
+
+        <h3>B. User-Configured Third-Party Cloud AI APIs &amp; Data Flow Rules</h3>
+        <p>Users may optionally configure their own API keys for cloud-based LLM providers (such as OpenAI, Google Gemini, Anthropic Claude, DeepSeek, Groq, or custom OpenAI-compatible endpoints):</p>
+        <ul>
+          <li><strong>Local API Key Vault</strong>: Your API keys and custom endpoint URLs are stored strictly on your local device (in encrypted or local storage). They are NEVER sent to or stored by Neuro-Surge.</li>
+          <li><strong>Direct Client-to-Endpoint Transmission</strong>: When you trigger a cloud AI task breakdown, HTTPS requests are dispatched <strong>directly from your local client to the official API endpoint of your chosen provider</strong>. No Neuro-Surge proxy, middleman server, or traffic-relaying node ever inspects, intercepts, or logs your prompts or keys.</li>
+          <li><strong>Data Flow Governed by Selected Provider Policies</strong>: When you use cloud AI, any task description contained in the prompt is transmitted directly to your selected provider. <strong>Data processing, retention, encryption in transit, and model training exemptions are governed strictly by the respective provider's terms of service and developer privacy policies:</strong></li>
+        </ul>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Provider</th>
+                <th>Endpoint Destination</th>
+                <th>Applicable Privacy &amp; Developer Terms</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>OpenAI</strong></td>
+                <td><code>api.openai.com</code></td>
+                <td><a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener noreferrer">OpenAI Privacy Policy</a> &amp; API Data Terms (API inputs not used for training by default).</td>
+              </tr>
+              <tr>
+                <td><strong>Google Gemini</strong></td>
+                <td><code>generativelanguage.googleapis.com</code></td>
+                <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a> &amp; Gemini API Additional Terms.</td>
+              </tr>
+              <tr>
+                <td><strong>Anthropic Claude</strong></td>
+                <td><code>api.anthropic.com</code></td>
+                <td><a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener noreferrer">Anthropic Commercial Privacy Policy</a> (Zero data training for API customers).</td>
+              </tr>
+              <tr>
+                <td><strong>DeepSeek</strong></td>
+                <td><code>api.deepseek.com</code></td>
+                <td><a href="https://www.deepseek.com/privacy" target="_blank" rel="noopener noreferrer">DeepSeek Privacy Policy</a> &amp; Open Platform Service Agreement.</td>
+              </tr>
+              <tr>
+                <td><strong>Custom Endpoints</strong></td>
+                <td>User-specified URL</td>
+                <td>Governed exclusively by the terms and policies of the custom host designated by the user.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p><em>Notice: Neuro-Surge does not control, supervise, or assume liability for how third-party cloud AI vendors process or retain your requests. You maintain full discretion to switch back to the Built-in Local SLM Engine at any moment for absolute air-gapped privacy.</em></p>
+      </div>
+
+      <!-- 5. Peer-to-Peer Co-Op -->
+      <div class="section-box">
+        <h2>5. Decentralized Peer-to-Peer Co-Op (Cyber Body Doubling) <span class="badge">P2P ENCRYPTED</span></h2>
+        <ul>
+          <li><strong>Direct WebRTC DataChannel</strong>: The Cyber Body Doubling joint focus room connects participants directly through peer-to-peer (P2P) WebRTC communication via ephemeral room IDs.</li>
+          <li><strong>Real-Time Mutual Accountability State</strong>: To facilitate mutual focus accountability during co-op sessions, the application synchronizes your <strong>current spotlight task title, user nickname, level, timer ticks, and boss damage values</strong> directly with your connected partner over the peer-to-peer data channel.</li>
+          <li><strong>Zero Server Relaying or Storage</strong>: All P2P synchronization travels strictly point-to-point between the two devices. No task titles or session states are ever routed through, stored on, or archived by Neuro-Surge servers.</li>
+        </ul>
+      </div>
+
+      <!-- 6. Procedural Audio Engine -->
+      <div class="section-box">
+        <h2>6. Procedural Audio Engine &amp; Soundscape Privacy</h2>
+        <p>Cyber Flow provides 7 specialized neuro-acoustic soundscapes (Brown Noise, Pink Noise, 40Hz Gamma, 10Hz Alpha, 6Hz Theta binaural beats, Procedural Cyber Rain, and 55Hz Deep Space Drone) and procedural UI feedback audio:</p>
+        <ul>
+          <li><strong>100% Real-Time Mathematical Synthesis</strong>: All acoustic waves are mathematically generated in real-time on your computer using the HTML5 <code>AudioContext</code> API (oscillators, biquad filters, and pink/brown noise buffers).</li>
+          <li><strong>Zero Remote Audio Streaming</strong>: The app downloads zero audio files or streams from remote CDNs, and transmits zero audio listening telemetry or preferences.</li>
+        </ul>
+      </div>
+
+      <!-- 7. Children's Privacy -->
+      <div class="section-box">
+        <h2>7. Children's Privacy (COPPA &amp; GDPR-K Compliance)</h2>
+        <p>
+          Cyber Flow does not knowingly solicit or collect personal identifiable information from children under the age of 13 (or under 16 in the European Union). Because the app is architected without server accounts or centralized data collection, no personal child data is ever requested, captured, or shared.
+        </p>
+      </div>
+
+      <!-- 8. Operating System Language Detection -->
+      <div class="section-box">
+        <h2>8. Local System Language Detection <span class="badge">ON-DEVICE ONLY</span></h2>
+        <p>
+          Upon launching, Cyber Flow reads your local operating system language preference (via native system environment and <code>navigator.language</code>) solely to automatically initialize and display the interface in your matching preferred language. 
+          This detection is executed <strong>100% locally on your device</strong>. No operating system locale, geographical data, or language settings are ever transmitted or logged to any external server.
+        </p>
+      </div>
+
+      <!-- 9. Updates & Contact -->
+      <div class="section-box">
+        <h2>9. Policy Revisions &amp; Developer Contact</h2>
+        <p>
+          We may update this Privacy Policy periodically to reflect new features or regulatory requirements. Any modifications will be clearly reflected in the application release notes and published on our official privacy policy web page.
+        </p>
+        <p>
+          If you have questions, feedback, or require verification regarding this Privacy Policy, please contact the developer via:
+        </p>
+        <ul>
+          <li><strong>Developer Entity</strong>: Neuro-Surge</li>
+          <li><strong>Official Privacy Policy Page</strong>: <a href="https://neurosurge-studio.github.io/Cyber-flow-privacy/" target="_blank" rel="noopener noreferrer">https://neurosurge-studio.github.io/Cyber-flow-privacy/</a></li>
+          <li><strong>Microsoft Store Contact</strong>: Via the official Developer Support channel in the Microsoft Store listing.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer">
+      Cyber Flow // Gamified Deep Focus System · Developed by Neuro-Surge · All Rights Reserved
+    </div>
+  </div>
+</body>
+</html>
 
